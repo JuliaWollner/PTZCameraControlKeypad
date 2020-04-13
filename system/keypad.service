@@ -1,0 +1,11 @@
+[Unit]
+Description=keypadhandler
+After=network-pre.target network.target network-online.target
+
+[Service]
+Type=simple
+ExecStart=/opt/keypad/keypadhandler.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

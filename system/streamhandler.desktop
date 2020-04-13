@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Streamhandler
+Comment=Autostart VLC-Stream
+Type=Application
+Exec=/opt/stream/streamhandler.py
