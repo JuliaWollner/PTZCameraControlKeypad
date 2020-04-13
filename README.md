@@ -37,7 +37,7 @@ The displayed values **0403:6001** are the *"idVendor"* and the *"idProduct"*. T
 lsusb -vs 001:004
 ```
 
-The values ***001*** correspond to the "Bus" returned above and ***004*** to the "Device" returned above. Now you should see your *"iSerial"*.
+The values ***001*** correspond to the "Bus" and ***004*** to the "Device" returned above. Now you should see your *"iSerial"*.
 
 ```
 A400MFLH
