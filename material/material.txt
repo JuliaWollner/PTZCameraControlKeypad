@@ -3,10 +3,12 @@ List of the required materials:
 - 1x Raspberry PI 2/3/3B+/4
 - 1x Original Raspberry PI power supply
 - 1x Original Arduino Nano
-- 3x 3mm LEDs
+- 4x 3mm LEDs
 - 1x Switch (19.4 mm x 13.0 mm)
 - 1x 4x4 Keypad
 - 1x 3m Mini-USB-Cable
 - 1x M10 Cable screw connection
 - 1x 330Ohm Resistor
+- 4x M3 x 8 mm screws
 - 1x Jumper wire (Male-Female)
+- 1x heat shrink tubing
