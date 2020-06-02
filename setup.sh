@@ -202,22 +202,19 @@ fi
 
 if [ $stream == 'y' ];
 	then 
-	# disable blank screen
+	# disable screen blanking
 	echo -e "\e[0m"
-	echo -e "\e[96mDisable blank screen\e[0m"
-	sudo bash -c "printf ""'\n'"" >> /etc/xdg/lxsession/LXDE-pi/autostart"
-	sudo bash -c "printf ""@xset\ s\ noblank'\n'"" >> /etc/xdg/lxsession/LXDE-pi/autostart"
+	echo -e "\e[96mDisable screen blanking\e[0m"
+	sudo mkdir -p /etc/X11/xorg.conf.d/
+	sudo cp /usr/share/raspi-config/10-blanking.conf /etc/X11/xorg.conf.d/
+fi
 
-	# disable screensaver
-	echo -e "\e[0m"
-	echo -e "\e[96mDisable screensaver\e[0m"
-	sudo bash -c "printf ""@xset\ s\ off'\n'"" >> /etc/xdg/lxsession/LXDE-pi/autostart"
-
-	# disable Power Management 
-	echo -e "\e[0m"
-	echo -e "\e[96mDisable power management\e[0m"
-	sudo bash -c "printf ""@xset\ -dpms'\n'"" >> /etc/xdg/lxsession/LXDE-pi/autostart"
-	sudo bash -c "printf ""'\n'"" >> /etc/xdg/lxsession/LXDE-pi/autostart"
+# sound global setting
+echo -e "\e[0m"
+echo -e "\e[96mSound global setting\e[0m"
+if [ -f /home/pi/.asoundrc ];
+	then
+	sudo cp /home/pi/.asoundrc /etc/asound.conf
 fi
 
 echo -e "\e[0m"
