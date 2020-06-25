@@ -13,15 +13,15 @@ import subprocess as sub
 with open("YOURS") as creds:
 	credentials = json.load(creds)
 
-# Zuweisen der Logindaten
+# Setzen der Logindaten
 username = credentials['benutzername']
 password = credentials['passwort']
 server = credentials['server']
 rtspport = credentials['rtspport']
 httpport = credentials['httpport']
 
-# Hilfsvariablen erstellen
-programm = 'vlc'
+# Hilfsvariablen anlegen
+program = 'vlc'
 pid = None
 online = None
 quality = '11'
@@ -39,8 +39,8 @@ def servercheck(ip,httpport):
 while True:
 	online = servercheck(server,int(httpport))
 	try:
-		programm = programm[:15]
-		pid = sub.check_output("pgrep %s" %programm, shell=True)
+		program = program[:15]
+		pid = sub.check_output("pgrep %s" %program, shell=True)
 		if online == False:
 			pid = int(pid)
 			os.kill(pid, signal.SIGKILL)
