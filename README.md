@@ -15,7 +15,7 @@ This repository contains all files you need to rebuild a camera controlling unit
 
 After 3D printing the enclosure of the keypad, it has to be assembled as shown in the [circuit schematic](https://github.com/JuliaWollner/PTZCameraControlKeypad/blob/master/circuit/circuit_1.png). The result should look like as follows:
 
-<img align="center" src="https://github.com/JuliaWollner/PTZCameraControlKeypad/blob/master/images/title/image_02.jpg" width="420"> <img align="center" src="https://github.com/JuliaWollner/PTZCameraControlKeypad/blob/master/images/title/image_03.jpg" width="420">
+<img align="center" src="https://github.com/JuliaWollner/PTZCameraControlKeypad/blob/master/images/title/image_02.jpg" width="415"> <img align="center" src="https://github.com/JuliaWollner/PTZCameraControlKeypad/blob/master/images/title/image_03.jpg" width="415">
 
 ## Preparing installation
 
