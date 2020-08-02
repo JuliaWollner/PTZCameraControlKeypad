@@ -1,1 +1,1 @@
-SUBSYSTEMS=="usb", ATTRS{idVendor}=="YOURS", ATTRS{idProduct}=="YOURS", ATTRS{serial}=="YOURS", SYMLINK+="keypad", ACTION=="add"
+ACTION=="add", SUBSYSTEM=="tty", ATTRS{idVendor}=="YOURS", ATTRS{idProduct}=="YOURS", ATTRS{serial}=="YOURS", SYMLINK+="keypad"
