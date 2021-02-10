@@ -5,6 +5,7 @@ After=network-pre.target network.target network-online.target
 [Service]
 Type=simple
 ExecStart=/opt/keypad/keypadhandler.py
+User=pi
 Restart=always
 
 [Install]

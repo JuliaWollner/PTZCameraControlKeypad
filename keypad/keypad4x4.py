@@ -56,7 +56,7 @@ def servercheck(server):
 # Funktion Feedbacksound Okay
 def feedbacksoundok():
 	try:
-		sub.call (["aplay -q /opt/keypad/sounds/feedbackok.wav"], shell=True)
+		sub.call (["XDG_RUNTIME_DIR=/run/user/$(id -u) aplay -q /opt/keypad/sounds/feedbackok.wav"], shell=True)
 	except:
 		pass
 	return
@@ -64,7 +64,7 @@ def feedbacksoundok():
 # Funktion Feedbacksound Failure
 def feedbacksoundfailure():
 	try:
-		sub.call (["aplay -q /opt/keypad/sounds/feedbackfailure.wav"], shell=True)
+		sub.call (["XDG_RUNTIME_DIR=/run/user/$(id -u) aplay -q /opt/keypad/sounds/feedbackfailure.wav"], shell=True)
 	except:
 		pass
 	return
